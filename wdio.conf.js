@@ -67,7 +67,8 @@ exports.config = {
       //
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: ["--incognito"],
+        args: ['headless', 'disable-gpu'],
+        
       },
       acceptInsecureCerts: true,
       // If outputDir is provided WebdriverIO can capture driver session logs
