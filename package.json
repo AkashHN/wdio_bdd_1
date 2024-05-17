@@ -9,7 +9,7 @@
     "API": "npx wdio --suite API",
     "UI": "npx wdio --suite UI --headless",
     "MOBILE": "npx wdio android_wdio.conf.js --suite MOBILE",
-    "UI&MOBILE":"npx wdio --suite UI --headless || npx wdio android_wdio.conf.js --suite MOBILE",
+    "UI_MOBILE":"npx wdio --suite UI || npx wdio android_wdio.conf.js --suite MOBILE",
     "parallel": "concurrently \"npx wdio wdio.conf.js --suite UI\" \"npx wdio wdio.conf.js --suite API\""
   },
   "keywords": [],
